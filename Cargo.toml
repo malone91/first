@@ -25,3 +25,7 @@ path = "src/framed_server.rs"
 [[bin]]
 name = "framed_client"
 path = "src/framed_client.rs"
+
+[[bin]]
+name = "lock"
+path = "src/lock.rs"
