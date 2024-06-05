@@ -5,6 +5,7 @@ edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 [dependencies]
+axum = "0.7"
 bytes = "1.6.0"
 futures = "0.3.30"
 tokio = { version = "1.38.0", features = ["full"] }
@@ -29,3 +30,11 @@ path = "src/framed_client.rs"
 [[bin]]
 name = "lock"
 path = "src/lock.rs"
+
+[[bin]]
+name = "channel"
+path = "src/channel.rs"
+
+[[bin]]
+name = "web"
+path = "src/web.rs"
