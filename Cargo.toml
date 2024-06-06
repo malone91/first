@@ -8,6 +8,7 @@ edition = "2021"
 axum = "0.7"
 bytes = "1.6.0"
 futures = "0.3.30"
+reqwest = {version = "0.12.4", features = ["blocking"]}
 serde = "1.0.203"
 tokio = { version = "1.38.0", features = ["full"] }
 tokio-util = { version = "0.7.11", features = ["full"] }
@@ -42,3 +43,7 @@ path = "src/channel.rs"
 [[bin]]
 name = "web"
 path = "src/web.rs"
+
+[[bin]]
+name = "as_markdown"
+path = "src/as_markdown.rs"
